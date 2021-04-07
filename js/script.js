@@ -15,13 +15,10 @@ var prezzo_no_sconto = prezzo_base * distanza;
 
 // Prezzo finale
 if(età < 18 ){
-    console.log(prezzo_no_sconto - (prezzo_no_sconto * sconto_minori));
+    document.getElementById("output").innerHTML = "Caro cliente,<br>" + "siamo lieti di informarti che grazie agli sconti sull'età l'importo finale del biglietto è di " + (prezzo_no_sconto - (prezzo_no_sconto * sconto_minori)) + " €. <br>" + "Le auguriamo un buon viaggio!";
 }else if(età > 65){
-    console.log(prezzo_no_sconto - (prezzo_no_sconto * sconto_over));
+    document.getElementById("output").innerHTML = "Caro cliente,<br>" + "siamo lieti di informarti che grazie agli sconti sull'età l'importo finale del biglietto è di " + (prezzo_no_sconto - (prezzo_no_sconto * sconto_over)) + " €. <br>" + "Le auguriamo un buon viaggio!";
 }else{
-    console.log(prezzo_no_sconto);
+    document.getElementById("output").innerHTML = "Caro cliente,<br>" + "il prezzo del tuo biglietto corrisponde a " + (prezzo_no_sconto) + "€. <br>" + "Le auguriamo un buon viaggio!";
 }
-
-// Output 
-//document.getElementById("output").innerHTML = "Caro cliente ti informiamo che grazie agli sconti sull'età l'importo finale da pagare è di " +  + "$";
 
