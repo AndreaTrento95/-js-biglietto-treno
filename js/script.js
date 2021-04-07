@@ -15,10 +15,10 @@ var prezzo_no_sconto = prezzo_base * distanza;
 
 // Prezzo finale
 if(età < 18 ){
-    document.getElementById("output").innerHTML = "Caro cliente,<br>" + "siamo lieti di informarti che grazie agli sconti sull'età l'importo finale del biglietto è di " + (prezzo_no_sconto - (prezzo_no_sconto * sconto_minori)).toFixed(2) + " €. <br>" + "Le auguriamo un buon viaggio!";
+    document.getElementById("output").innerHTML = "Caro cliente,<br>" + "siamo lieti di informarti che grazie agli sconti sull'età l'importo finale del biglietto è di " + (prezzo_no_sconto - (prezzo_no_sconto * sconto_minori)).toFixed(2) + " €. <br><br>" + "Le auguriamo un buon viaggio!";
 }else if(età > 65){
-    document.getElementById("output").innerHTML = "Caro cliente,<br>" + "siamo lieti di informarti che grazie agli sconti sull'età l'importo finale del biglietto è di " + (prezzo_no_sconto - (prezzo_no_sconto * sconto_over)).toFixed(2) + " €. <br>" + "Le auguriamo un buon viaggio!";
+    document.getElementById("output").innerHTML = "Caro cliente,<br>" + "siamo lieti di informarti che grazie agli sconti sull'età l'importo finale del biglietto è di " + (prezzo_no_sconto - (prezzo_no_sconto * sconto_over)).toFixed(2) + " €. <br><br>" + "Le auguriamo un buon viaggio!";
 }else{
-    document.getElementById("output").innerHTML = "Caro cliente,<br>" + "il prezzo del tuo biglietto corrisponde a " + (prezzo_no_sconto).toFixed(2) + "€. <br>" + "Le auguriamo un buon viaggio!";
+    document.getElementById("output").innerHTML = "Caro cliente,<br>" + "il prezzo del suo biglietto corrisponde a " + (prezzo_no_sconto).toFixed(2) + "€. <br><br>" + "Le auguriamo un buon viaggio!";
 }
 
